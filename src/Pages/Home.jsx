@@ -1,7 +1,7 @@
 import { Button } from "@telia/styleguide/business";
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import useMatomoAnalytics from "./hooks/useMatomo";
+import useMatomoAnalytics from "./../hooks/useMatomo";
 
 const Home = () => {
   useMatomoAnalytics();
