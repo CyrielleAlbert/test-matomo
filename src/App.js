@@ -1,6 +1,7 @@
 import "./App.css";
 import { BrowserRouter, Route, Routes as Switch } from "react-router-dom";
 import { Home, Page2, Page3, Flow } from "./Pages/index";
+import useMatomoAnalytics from "./hooks/useMatomo";
 
 function App() {
   return (

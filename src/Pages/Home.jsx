@@ -1,9 +1,12 @@
 import { Button } from "@telia/styleguide/business";
 import React from "react";
-import {useNavigate} from "react-router-dom"
+import { useNavigate } from "react-router-dom";
+import useMatomoAnalytics from "./hooks/useMatomo";
+
 const Home = () => {
-    const navigate = useNavigate();
-    const enterFlow = () => navigate("/Flow")
+  useMatomoAnalytics();
+  const navigate = useNavigate();
+  const enterFlow = () => navigate("/Flow");
 
   return (
     <>
@@ -11,7 +14,7 @@ const Home = () => {
         style={{
           height: window.innerHeight,
           width: window.innerWidth,
-          backgroundColor: "#F4f4F4",
+          backgroundColor: "#181818",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
@@ -30,7 +33,7 @@ const Home = () => {
         style={{
           height: window.innerHeight,
           width: window.innerWidth,
-          backgroundColor: "#F4f4F4",
+          backgroundColor: "#181818",
         }}
       ></div>
     </>
